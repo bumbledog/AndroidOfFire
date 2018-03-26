@@ -11,6 +11,7 @@
     "react-native": "0.54.2",
     "react-native-base": "^1.1.0",
     "react-native-progress-circle": "^2.0.0",
+    "react-native-vector-icons": "^4.5.0",
     "react-navigation": "^1.5.8"
   },
   "devDependencies": {
