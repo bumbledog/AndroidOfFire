@@ -11,33 +11,56 @@ import {
   Text,
   View
 } from 'react-native';
+<<<<<<< HEAD
+import { StackNavigator } from 'react-navigation';
+import MainScreen from './MainScreen';
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' +
-    'Cmd+D or shake for dev menu',
-  android: 'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
+const Root = StackNavigator({
+    MainScreen: {
+        screen: MainScreen
+    },
 
-type Props = {};
-export default class App extends Component<Props> {
+    SleepingPikachu: {
+        screen: SleepingPikachu
+    },
+},
+    {
+      initialRouteName: 'MainScreen',
+      mode: 'modal',
+    }
+);
+
+export default class App extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit App.js
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
-      </View>
+      <Root
+        screenProps={{
+          val1: "value1",
+          val2: "value2"
+        }}
+      />
     );
   }
 }
+=======
+import { 
+  Container,
+   Header,
+    Content,
+     Button,
+      Icon,
+       Text 
+      } from 'native-base';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
+
+export default class App extends Component {
+  render() {
+    return (
+      <RootTab/>
+    );
+  }
+}
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -55,4 +78,6 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
+  
 });
+>>>>>>> 856e368ae92e659537ac00722eb7ee54d2ce9565
