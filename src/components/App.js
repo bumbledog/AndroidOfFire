@@ -11,6 +11,14 @@ import {
   Text,
   View
 } from 'react-native';
+import { 
+  Container,
+   Header,
+    Content,
+     Button,
+      Icon,
+       Text 
+      } from 'native-base';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 
