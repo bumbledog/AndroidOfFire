@@ -11,9 +11,19 @@ import {
   Text,
   View
 } from 'react-native';
+import { 
+Container, 
+Header, 
+Content, 
+Button, 
+Icon, 
+Text    
+} from 'native-base';
+
 <<<<<<< HEAD
 import { StackNavigator } from 'react-navigation';
 import MainScreen from './MainScreen';
+import SleepingPikachu from './SleepingPikachu';
 
 const Root = StackNavigator({
     MainScreen: {

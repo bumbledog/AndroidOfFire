@@ -17,7 +17,6 @@ import {
     Title,
     Text
 } from 'native-base';
-
 import styles from '../styles/Style';
 
 class MainScreen extends Component {
@@ -38,27 +37,18 @@ class MainScreen extends Component {
                     </View>
                 </Body>
                 <FooterTab>
-                    <Button
-
-                    >
-                        <Text>
-                            Feed Pikachu
-                        </Text>
-                    </Button>
-                    <Button
-
-                    >
-                        <Text>
-                            Poke Pikachu
-                        </Text>
-                    </Button>
-                    <Button
-
-                    >
-                        <Text>
-                            Clean up Pikachu's poo
-                        </Text>
-                    </Button>
+                <Button iconLeft style={styles.buttonDrawer}>
+                    <Icon name='ios-nutrition'>
+                    <Text>feed Pikachu</Text>
+                </Button>
+                <Button iconLeft style={styles.buttonDrawer}>
+                    <Icon name='md-arrow-up'>
+                    <Text>Poke Pikachu</Text>
+                </Button>
+                <Button iconLeft style={styles.buttonDrawer}>
+                    <Icon name='ios-trash'>
+                    <Text>Poke Pikachu</Text>
+                </Button>
                 </FooterTab>
             </Container>
         );
