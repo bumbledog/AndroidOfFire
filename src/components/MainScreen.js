@@ -38,15 +38,15 @@ class MainScreen extends Component {
                 </Body>
                 <FooterTab>
                 <Button iconLeft style={styles.buttonDrawer}>
-                    <Icon name='ios-nutrition'>
+                    <Icon name='ios-nutrition'/>
                     <Text>feed Pikachu</Text>
                 </Button>
                 <Button iconLeft style={styles.buttonDrawer}>
-                    <Icon name='md-arrow-up'>
+                    <Icon name='md-arrow-up'/>
                     <Text>Poke Pikachu</Text>
                 </Button>
                 <Button iconLeft style={styles.buttonDrawer}>
-                    <Icon name='ios-trash'>
+                    <Icon name='ios-trash'/>
                     <Text>Poke Pikachu</Text>
                 </Button>
                 </FooterTab>
