@@ -4,9 +4,9 @@ import {
     Text
   } from 'react-native';
 import { Container, Header, Content, Button, Icon, Text } from 'native-base';
-import styles from '../styles/basicStyle'
+import styles from '../styles/basicStyle';
 
-export default class SleepingPikachu extends Component<{}}> {
+export default class SleepingPikachu extends Component {
     render(){
         return(
             <Container>
