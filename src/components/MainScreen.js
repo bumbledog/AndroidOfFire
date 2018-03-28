@@ -17,7 +17,7 @@ import {
     Title,
     Text
 } from 'native-base';
-import styles from '../styles/Style';
+import styles from '../styles/basicStyle';
 
 class MainScreen extends Component {
     constructor(props) {

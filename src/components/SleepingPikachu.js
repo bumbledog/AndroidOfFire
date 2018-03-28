@@ -1,9 +1,20 @@
 import React, { Component } from 'react';
 import {
     View,
-    Text
   } from 'react-native';
-import { Container, Header, Content, Button, Icon, Text } from 'native-base';
+import {
+    Body,
+    Button,
+    Container,
+    Content,
+    Footer,
+    FooterTab,
+    Icon,
+    Left,
+    Right,
+    Title,
+    Text
+} from 'native-base';
 import styles from '../styles/basicStyle';
 
 export default class SleepingPikachu extends Component {
@@ -13,7 +24,7 @@ export default class SleepingPikachu extends Component {
             <View>
                 <Image
                     style={styles.imageDrawer}
-                    source={require('../images/sleeping-pikachu.png')}
+                    source={require('../images/sleepingPika.gif')}
                 />
                 <Button iconLeft style={styles.buttonDrawer}>
                     <Icon name='bell-ring'/>
