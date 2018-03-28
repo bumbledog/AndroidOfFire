@@ -34,6 +34,9 @@ class MainScreen extends Component {
                 <Body>
                     <View>
                         {this.state.pictureOfPickachu == null ? <Text> need a picture of pikachu here </Text> : <Text> place holder </Text>}
+                        <View style={{flex: 1, flexDirection: 'row'}}>
+                        
+                        </View>
                     </View>
                 </Body>
                 <FooterTab>

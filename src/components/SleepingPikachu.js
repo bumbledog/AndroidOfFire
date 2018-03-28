@@ -16,7 +16,7 @@ export default class SleepingPikachu extends Component<{}}> {
                     source={require('../images/sleeping-pikachu.png')}
                 />
                 <Button iconLeft style={styles.buttonDrawer}>
-                    <Icon name='bell-ring'>
+                    <Icon name='bell-ring'/>
                     <Text>Poke Pikachu Awake</Text>
                 </Button>
             </View>
