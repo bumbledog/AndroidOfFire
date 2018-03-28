@@ -24,7 +24,7 @@ export default class SleepingPikachu extends Component {
             <View>
                 <Image
                     style={styles.imageDrawer}
-                    source={require('../images/sleepingPika.gif')}
+                    source={require('../images/pikachu_sleeping.png')}
                 />
                 <Button iconLeft style={styles.buttonDrawer}>
                     <Icon name='bell-ring'/>

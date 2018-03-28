@@ -18,11 +18,11 @@ import SleepingPikachu from './SleepingPikachu';
 
 const Root = StackNavigator({
     MainScreen: {
-        screen: MainScreen
+        screen: MainScreen,
     },
 
     SleepingPikachu: {
-        screen: SleepingPikachu
+        screen: SleepingPikachu,
     },
 },
     {
