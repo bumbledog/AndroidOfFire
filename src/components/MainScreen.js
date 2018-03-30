@@ -3,6 +3,7 @@ import {
     Platform,
     StyleSheet,
     View,
+    Image
 } from 'react-native';
 import {
     Body,
@@ -15,7 +16,7 @@ import {
     Left,
     Right,
     Title,
-    Text
+    Text,
 } from 'native-base';
 import styles from '../styles/basicStyle';
 
@@ -24,19 +25,34 @@ export default class MainScreen extends Component {
         super(props);
 
         this.state = {
-            pictureOfPikachu: null
+            currentTime: 0,
+            deadTime: 0,
+            sleepTime: 0,
+            hungryTime: 0,
         }
     }
 
+    componentDidMount() {
+        let date = new Date()
+        let time = date.getHours();
+        console.log('minutes: ', date.getMinutes())
+       // console.log('time: ', time);
+        this.setState({currentTime: date.getMinutes()})
+        let endTime = (date.getMinutes() + 59) % 60
+        console.log('endTime: ', endTime);
+        this.setState({deadTime: endTime})
+        this.setState({sleepTime: (date.getMinutes() + 30) % 60})
+        this.setState({hungryTime: (date.getMinutes() + 10) % 60})
+    }
     render() {
         return (
             <Container>
                 <Body>
                     <View>
-                        {this.state.pictureOfPickachu == null ? <Text> need a picture of pikachu here </Text> : <Text> place holder </Text>}
-                        <View style={{flex: 1, flexDirection: 'row'}}>
-                        
-                        </View>
+                        <Image
+                            style={styles.imageDrawer}
+                            source={require('../images/pikachu.jpg')}
+                        />
                     </View>
                 </Body>
                 <FooterTab>
@@ -55,5 +71,23 @@ export default class MainScreen extends Component {
                 </FooterTab>
             </Container>
         );
+    }
+
+    _getHungryPercent() {
+        let percent = this.state.currentTime / this.state.hungryTime
+        console.log('percent: ', percent);
+        return percent
+    }
+
+    _getSleepPercent() {
+        let percent = this.state.currentTime / this.state.sleepTime
+        console.log('percent: ', percent);
+        return percent
+    }
+
+    _getDeadPercent() {
+        let percent = this.state.currentTime / this.state.deadTime
+        console.log('percent: ', percent);
+        return percent
     }
 }
