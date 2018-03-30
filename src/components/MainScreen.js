@@ -19,6 +19,7 @@ import {
     Text,
 } from 'native-base';
 import styles from '../styles/basicStyle';
+import ProgressCircle from 'react-native-progress-circle' 
 
 export default class MainScreen extends Component {
     constructor(props) {
@@ -53,6 +54,39 @@ export default class MainScreen extends Component {
                             style={styles.imageDrawer}
                             source={require('../images/pikachu.jpg')}
                         />
+                        <View style={{flex: 1, flexDirection: 'row'}}>
+                        <ProgressCircle
+                            percent={30}
+                            radius={50}
+                            borderWidth={8}
+                            color="#3399FF"
+                            shadowColor="#999"
+                            bgColor="#fff"
+                        >
+                        <Text style={{ fontSize: 18 }}>{'poo'}</Text>
+                        </ProgressCircle>
+                        <ProgressCircle
+                            percent={30}
+                            radius={50}
+                            borderWidth={8}
+                            color="#FFAE19"
+                            shadowColor="#999"
+                            bgColor="#fff"
+                        >
+                        <Text style={{ fontSize: 18 }}>{'Food'}</Text>
+                        </ProgressCircle>
+                        <ProgressCircle
+                            percent={30}
+                            radius={50}
+                            borderWidth={8}
+                            color="#993299"
+                            shadowColor="#999"
+                            bgColor="#fff"
+                        >
+                        <Text style={{ fontSize: 18 }}>{'Sleep'}</Text>
+                        </ProgressCircle>
+                        
+                        </View>
                     </View>
                 </Body>
                 <FooterTab>
